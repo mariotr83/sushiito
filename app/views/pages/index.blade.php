@@ -145,7 +145,7 @@
         <div class="rightColumn contactText">
             <h1 class="contactText">CONTACTO</h1>
             <h2>Tu comentarios son importantes para nosotros</h2>
-            <form>
+            {{ Form::open(['route' => 'contact']) }}
                 <div class="leftColumnForm">
                     <p>Nombre:</p>
                     <p>Telefono:</p>
@@ -154,15 +154,21 @@
                     <p>Mensaje:</p>
                 </div>
                 <div class="rightColumnForm">
-                <p><input type="text" name="firstname"></p>
-                <p> <input type="text" name="lastname"></p>
-                    <p> <input type="text" name="email"></p>
-                    <p> <input type="text" name="sucursal"></p>
-                    <p> <input type="text" name="mensaje"></p>
+                <p><input type="text" name="name">{{$errors->first('name',"<span class=error>:message</span>")}}</p>
+
+
+                <p> <input type="text" name="phone"> {{$errors->first('phone',"<span class=error>:message</span>")}}</p>
+
+                    <p> <input type="text" name="email"> {{$errors->first('email',"<span class=error>:message</span>")}}</p>
+
+                    <p> <input type="text" name="sucursal">  {{$errors->first('sucursal',"<span class=error>:message</span>")}}</p>
+
+                    <p> <input type="text" name="mensaje">{{$errors->first('mensaje',"<span class=error>:message</span>")}}</p>
+
 
                 </div>
-                        <input type="button" value="ENVIAR">
-                </form>
+                        <input class="btn_purple" type="submit" value="ENVIAR">
+            {{Form::close()}}
             </div>
     </div>
 @stop

@@ -22,7 +22,7 @@ $(document).ready(function(){
             }, 1000);
         }else{
             $('html, body').animate({
-                scrollTop: $("#"+$(this).attr("data")).offset().top-60
+                scrollTop: $("#"+$(this).attr("data")).offset().top-0
             }, 1000);
         }
     });
@@ -108,6 +108,8 @@ $(document).ready(function(){
         $('#branch_address').html(branch[$(this).val()].address);
         $('#branch_schedule').html(branch[$(this).val()].schedule);
         $('#branch_phone').html(branch[$(this).val()].phone);
+        $('.branch_pickSucursal').html(branch[$(this).val()].pickSucursal);
+
 
         var current_time = new Date();
         if(branch[$(this).val()].dates[current_time.getDay()].open <= current_time.getHours() && branch[$(this).val()].dates[current_time.getDay()].close >= current_time.getHours()){
