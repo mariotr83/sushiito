@@ -6,7 +6,7 @@
         <div class="menu-logo">
             <img src="images/logo_sushiitto.png">
         </div>
-           <div class="fb_sushito"><a href="#"><img src="{{ URL::to('/images/fbIcon.png') }}">/Sushittonorte</a></div>
+           <div class="fb_sushito"><a href="https://www.facebook.com/sushiittonorte"><img src="{{ URL::to('/images/fbIcon.png') }}">/Sushittonorte</a></div>
         <div class="menu-items">
             <ul>
                 <li class="selected item" data="menu">Home</li>
