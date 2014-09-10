@@ -1,0 +1,369 @@
+@font-face {
+    font-family: 'bikoregular';
+    src: url('../fonts/biko_regular-webfont.eot');
+    src: url('../fonts/biko_regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/biko_regular-webfont.woff') format('woff'),
+    url('../fonts/biko_regular-webfont.ttf') format('truetype'),
+    url('../fonts/biko_regular-webfont.svg#bikoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bikobold';
+    src: url('../fonts/biko_bold-webfont.eot');
+    src: url('../fonts/biko_bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/biko_bold-webfont.woff') format('woff'),
+    url('../fonts/biko_bold-webfont.ttf') format('truetype'),
+    url('../fonts/biko_bold-webfont.svg#bikobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body,
+html{
+    padding:0;
+    margin:0;
+    font-family: 'bikobold';
+}
+
+h1{
+    font-size:34px;
+    color:#782E74;
+    margin-bottom:0px;
+}
+h2{
+    font-size:14px;
+    color:#782E74;
+}
+
+.resize{
+    width:1600px;
+    height:100%;
+    margin:0 auto;
+}
+
+/* ---- Menu ---- */
+.container-general{
+    position:relative;
+    width:100%;
+}
+
+.section-menu{
+    position: fixed;
+    width:100%;
+    min-width: 1000px;
+    height:100px;
+    z-index:1000;
+    background-color:rgba(250,250,250,0.8);
+    padding-top:20px;
+
+}
+.section-menu .menu-logo{
+    display:block;
+    float:left;
+    position:relative;
+    width:20%;
+    height:100px;
+    text-align:center;
+}
+.section-menu .menu-logo img{
+    position: relative;
+    height:80px;
+    width:auto;
+    top:15px;
+}
+.section-menu .menu-items{
+    display:block;
+    float:right;
+    position: relative;
+    width:60%;
+    text-align:center;
+    margin-top:30px;
+}
+.section-menu .menu-items ul{
+    position:relative;
+    height:100%;
+    left:5%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size:22px;
+    color:#782E74;
+}
+.section-menu .menu-items ul li{
+    display:block;
+    float:left;
+    position: relative;
+    height:30px;
+    padding:7px 10px 0 10px;
+    border-right:1px solid #956D93;
+   width:120px;
+    font-size:16px;
+
+
+}
+.section-menu .menu-items ul li:hover{
+    cursor: pointer;
+}
+.section-menu .menu-items ul .selected{
+
+    color:#ec1d3d;
+}
+.section-menu .menu-social{
+    display:block;
+    float:left;
+    position: relative;
+    width:20%;
+    text-align:center;
+}
+.section-menu .menu-social img{
+    margin:0;
+    padding:0;
+    position: relative;
+    height:35px;
+    width:35px;
+    top:12px;
+}
+
+/* ---- Slider ----- */
+.section{
+    -moz-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top:0px;
+}
+.section-slider{
+    position:relative;
+    background-image: url("../images/slider01.jpg");
+    height:500px;
+    background-size: cover;
+}
+.section-promotions{
+    position:relative;
+    height:100% !important  ;
+    background:#fff;
+}
+
+.section-menuPDF{
+    position:relative;
+    height:500px;
+    background:#fff;
+}
+.section-onlinestore{
+    position:relative;
+    height:500px;
+    background: #fff;
+}
+.section-location{
+    position:relative;
+    height:500px;
+}
+.section-location .map{
+    position:absolute;
+    width:40%;
+    height:50%;
+
+
+}
+.section-contact{
+    position: relative;
+    height:500px;
+    background:#fff;
+}
+
+.logoOnline{
+    width:50%;
+    bottom:10px;
+    height:450px;
+    padding-left:10%;
+}
+
+.whiteSpace{
+    height:200px;
+    width:100%;
+}
+
+.orderModule{
+    width:100%;
+    height:300px;
+    background: #782E74;
+}
+
+.redLabel{
+    width:100%;
+    height:20px;
+    background: #EB1E3C;
+}
+
+.menuImg{
+    width:620px;
+    height:auto;
+    margin:0 auto;
+    padding-top:100px;
+}
+
+.downloadPdf{
+    width:620px;
+    height:auto;
+    margin:0 auto;
+    padding-bottom:80px;
+    text-align: center;
+    color:#782E74;
+    border-bottom: 1px solid #782E74;
+
+}
+
+.leftColumn{
+    width:40%;
+    height:auto;
+    float:left;
+   padding: 150px 0 0 80px;
+}
+
+.rightColumn{
+    width:50%;
+    height:auto;
+    float:left;
+    padding: 150px 0px 0 0;
+}
+
+.mapHead{
+    width:95%;
+    height:60px;
+    background:#782E74;
+}
+
+.logoHeadMap{
+    width:200px;
+    height:60px;
+    margin:0 auto;
+
+}
+
+.logoHeadMap img{
+    height:60px;
+}
+
+#select_marker{
+    width: 35%;
+    height:40px;
+    background: transparent;
+    color: #585757;
+    padding: 5px;
+    font-size: 13px;
+    line-height: 100%;
+    border: 1px solid #C1C1C1;
+    border-radius: 10px;
+    -webkit-appearance: none;
+}
+
+.promoImg{
+    width:1083px;
+    height:auto;
+    margin:0 auto;
+    padding-top:200px;
+}
+
+.adresses{
+    background:rgba(177,179,181,0.1);
+    width:80%;
+    height:300px;
+    border-radius: 20px;
+    margin-top:60px;
+    padding:20px;
+}
+
+.contactText{
+    text-align: right;
+}
+
+.contactText input[type="text"]{
+    width:100%;
+    height:40px;
+    margin-bottom:10px;
+    border-radius: 10px;
+    border:1px solid #D1D2D4;
+
+}
+
+.contactText input[type="button"]{
+    width:100px;
+    height:40px;
+    margin-bottom:10px;
+    border-radius: 10px;
+    border:1px solid #D1D2D4;
+    background:#956D93;
+    color:#fff;
+}
+
+
+.leftColumnForm{
+    width:40%;
+    height:auto;
+    float:left;
+    padding: 5px 10px 0px 80px;
+}
+
+.leftColumnForm p{
+    text-align:right !important;
+    margin-bottom:55px;
+}
+
+.rightColumnForm{
+    width:50%;
+    height:auto;
+    float:left;
+    padding:0px 0px 0 0;
+}
+
+.branch_pickSucursal{
+    float:left;
+    margin:70px 0 0 30px;
+}
+
+.branch_pickSucursal img{
+    width:140px;
+}
+
+
+.adressSide{
+    width:300px;
+    height:auto;
+    float:left;
+    margin-left:40px;
+    color:#782E74;
+}
+
+.adressSide p{
+    font-family: 'bikoregular';
+    font-size: 14px;
+    margin-left:30px;
+}
+
+.iconPlaces{
+    float:left;
+    margin-top:10px;
+}
+.iconHours{
+    float:left;
+}
+
+.iconHours img{
+    width:15px;
+}
+
+
+.iconTels{
+    float:left;
+}
+
+.iconTels img{
+    width:15px;
+}
+
+.iconPlaces img{
+    width:15px;
+}
