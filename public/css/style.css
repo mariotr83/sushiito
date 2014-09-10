@@ -150,7 +150,7 @@ h2{
 }
 /* ---- Slider ----- */
 #slider_promotions{
-    width: 1600px;
+    width: 90%;
     height:700px ;
    /* background-color: red;*/
     margin: auto;
@@ -465,4 +465,9 @@ h2{
 
 .iconPlaces img{
     width:15px;
+}
+
+/*--------LAST MODIFICATIONS RESPONSIVE---*/
+.section-menuPDF{
+    padding-top: 150px;
 }

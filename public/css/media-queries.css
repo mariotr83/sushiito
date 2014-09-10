@@ -1,0 +1,149 @@
+/*MEDIA QUERIES**/
+
+
+
+
+
+@media all and (max-width: 1599px) and (min-width: 801px){
+    .resize {
+        width: 800px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .fb_sushito {
+        float: right;
+        height: 37px;
+        line-height: 37px;
+        margin-top: 30px;
+        color: #782E74;
+        width: 15%;
+        font-size: 14px;
+    }
+    .section-menu .menu-logo {
+        display: block;
+        float: left;
+        position: relative;
+        width: 15%;
+        height: 100px;
+        text-align: center;
+    }
+    .section-menu .menu-logo img {
+        position: relative;
+        height: auto;
+        width: auto;
+        top: 15px;
+        max-width: 100%;
+    }
+    .section-menu .menu-items {
+        display: block;
+        float: right;
+        position: relative;
+        /* width: 60%; */
+        width: 65%;
+        text-align: center;
+        margin-top: 30px;
+        margin-right: 3%;
+    }
+    .section-menu .menu-items ul li {
+        display: block;
+        float: left;
+        position: relative;
+        height: 30px;
+        padding: 7px 10px 0 10px;
+        /* padding: 0px; */
+        border-right: 1px solid #956D93;
+        width: auto;
+        font-size: 14px;
+    }
+    .section-slider {
+        position: relative;
+        background-image: url("../images/slider01.jpg");
+        height: 500px;
+        background-size: 99% auto;
+       background-position: center center;
+    }
+    .logoOnline{
+        padding-left: 15%;
+    }
+    .adresses {
+        position: relative;
+        background: rgba(177,179,181,0.1);
+        width: 73%;
+        height: 500px;
+        border-radius: 20px;
+        margin-top: 60px;
+        padding: 20px;
+    }
+    #select_marker {
+        width: 50%;
+        height: 40px;
+        background: transparent;
+        color: #585757;
+        padding: 5px;
+        font-size: 13px;
+        line-height: 100%;
+        border: 1px solid #C1C1C1;
+        border-radius: 10px;
+        -webkit-appearance: none;
+        background-image: url('../images/flechaDown.png');
+        background-repeat: no-repeat;
+        background-position: 95%;
+    }
+    .adressSide {
+        width: 300px;
+        height: auto;
+        float: left;
+        margin-left: 0px;
+        color: #782E74;
+    }
+    .Ubicanos{
+        padding: 0px;
+    }
+    .Mapa{
+        width: 60%;
+    }
+    .section-location .map {
+        position: absolute;
+        width: 456px;
+        height: 50%;
+    }
+    .left_contact{
+        width:25%;
+    }
+    .leftColumnForm {
+        width: 40%;
+        height: auto;
+        float: left;
+        padding: 0px;
+        padding-right:10%;
+        /* padding: 5px 10px 0px 80px; */
+    }
+    .section-promotions {
+        position: relative;
+        height: 100% !important;
+        background: #fff;
+        margin-top: 150px;
+    }
+
+    .section-location {
+        position: relative;
+        padding-top: 150px;
+    }
+    .section-menuPDF{
+        padding-top: 150px;
+    }
+}
+
+@media all and (min-width: 1600px){
+    .left_contact{
+        width:40%;
+    }
+    .leftColumnForm {
+        width: 40%;
+        height: auto;
+        float: left;
+        padding: 0px;
+        padding-right:10%;
+        /* padding: 5px 10px 0px 80px; */
+    }
+}

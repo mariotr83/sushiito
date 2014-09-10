@@ -80,7 +80,7 @@
     <div id="location" class="section section-location">
 
    <div class="resize">
-    <div class="leftColumn">
+    <div class="leftColumn Ubicanos">
         <h1>UBÍCANOS</h1>
         <h2>Selecciona tu sucursal más cercana.</h2>
 
@@ -123,7 +123,7 @@
 
     </div>
 
-     <div class="rightColumn">
+     <div class="rightColumn Mapa">
        <div class="mapHead">
            <div class="logoHeadMap">
                 <img src="images/logo_sushiittoRev.png">
@@ -139,7 +139,7 @@
 </div>
 <div class="redLabel"></div>
     <div id="contact" class="section section-contact" data-stellar-background-ratio="0.5">
-            <div class="leftColumn">
+            <div class="leftColumn left_contact">
                 </div>
 
         <div class="rightColumn contactText">

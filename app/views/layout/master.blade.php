@@ -9,7 +9,7 @@
         <!-- Style sheets CSS -->
         <link rel="stylesheet" href="<?=URL::to('css/nivo-slider.css')?>" type="text/css" media="screen" />
         <link rel="stylesheet" type="text/css" href="<?=URL::to('css/style.css')?>">
-
+        <link rel="stylesheet" type="text/css" href="<?=URL::to('css/media-queries.css')?>">
         <!-- Javascript -->
         <script type="text/javascript" src="<?=URL::to('javascript/plugins/jquery/jquery.min.js')?>"></script>
         <script type="text/javascript" src="<?=URL::to('javascript/plugins/stellar/stellar.js')?>"></script>
