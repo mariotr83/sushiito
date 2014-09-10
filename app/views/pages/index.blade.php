@@ -6,6 +6,7 @@
         <div class="menu-logo">
             <img src="images/logo_sushiitto.png">
         </div>
+           <div class="fb_sushito"><a href="#"><img src="{{ URL::to('/images/fbIcon.png') }}">/Sushittonorte</a></div>
         <div class="menu-items">
             <ul>
                 <li class="selected item" data="menu">Home</li>
@@ -15,7 +16,9 @@
                 <li class="item" data="location">Ubicanos</li>
                 <li class="item" data="contact">Contacto</li>
             </ul>
+
         </div>
+
         <div class="menu-social">
 
         </div>
@@ -47,12 +50,30 @@
 
 
 <div id="promotions" class="section section-promotions" data-stellar-background-ratio="0.5">
-    <div class="promoImg">
-        <img src="images/promo01.jpg">
+
+    <div id="slider_promotions">
+        <ul class="bjqs">
+            <li><img src="{{ URL::to('/images/slider/s_promocion01.jpg') }}"><!-- Any content you like --></li>
+            <li><img src="{{ URL::to('/images/slider/s_promocion03.jpg') }}"><!-- Can go inside these slides--></li>
+        </ul>
     </div>
-    <div class="downloadPdf">
+
+   <!--<div class="promoImg">
+
+    </div>-->
+    <!--<div class="downloadPdf">
         <p>Descarga el menú en PDF aquí.</p>
+    </div>-->
+    <div class="suscribe_wrap">
+        <div class="left_suscribe">
+                <div class="title_suscribe">Recibe Ofertas y Promociones</div>
+                <div class="info_suscribe">Ingresa aqui tu correo para enviarte nuestras promociones y descuentos</div>
+        </div>
+        <div class="right_suscribe">
+            <input type="text" class="input_rounded" placeholder="Escribe tu correo"> <input type="submit" value="Suscribir" class="btn_purple">
+        </div>
     </div>
+
     <div class="redLabel"></div>
 </div>
 
@@ -71,6 +92,7 @@
 
 
       <div class="adresses">
+          <div class="arrow_adresses"></div>
           <div class="branch_pickSucursal">
               <img src="images/sucursal01.jpg">
           </div>
@@ -154,4 +176,20 @@
 @section('footer')
     <script src=""></script>
     <script src="/public/javascript/functions.js"></script>
+@stop
+
+
+@section('js_code')
+ <script>
+     $(document).ready(function(){
+         $('#slider_promotions').bjqs({
+             'height' : 516,
+             'width' : 1083,
+             'showmarkers' : false,
+             'nexttext' : "<img src={{URL::to('/images/right_arrow.png')}}>", // Text for 'next' button (can use HTML)
+             'prevtext' : "<img src={{URL::to('/images/left_arrow.png')}}>", // Text for 'previous' button (can use HTML)
+             'responsive' : true
+         });
+     });
+ </script>
 @stop

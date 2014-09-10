@@ -79,9 +79,12 @@ h2{
     display:block;
     float:right;
     position: relative;
-    width:60%;
+    /*width:60%;*/
+    width: 53%;
     text-align:center;
     margin-top:30px;
+
+    margin-right: 5%;
 }
 .section-menu .menu-items ul{
     position:relative;
@@ -98,7 +101,8 @@ h2{
     float:left;
     position: relative;
     height:30px;
-    padding:7px 10px 0 10px;
+   /* padding:7px 10px 0 10px;*/
+    padding:7px 5px 0 5px;
     border-right:1px solid #956D93;
    width:120px;
     font-size:16px;
@@ -128,7 +132,78 @@ h2{
     top:12px;
 }
 
+.fb_sushito{
+    float: right;
+    height: 37px;
+    line-height: 37px;
+    margin-top: 30px;
+    color:#782E74;
+}
+.fb_sushito a{
+    text-decoration: none;
+    color: inherit;
+}
+
 /* ---- Slider ----- */
+#slider_promotions{
+    width: 1600px;
+    height:700px ;
+   /* background-color: red;*/
+    margin: auto;
+}
+.suscribe_wrap{
+    width: 900px;
+    margin: auto;
+    margin-top:10px;
+    min-height: 50px;
+    padding-bottom:30px;
+}
+.left_suscribe{
+    width: 50%;
+    float: left;
+}
+.right_suscribe{
+    width: 50%;
+    float: left;
+}
+.title_suscribe{
+    text-transform: uppercase;
+    width: 100%;
+    min-height: 25px;
+    height: auto;
+    color: #782E74;
+    float: left;
+}
+.info_suscribe{
+    width: 100%;
+    min-height: 25px;
+    height: auto;
+    color: #782E74;
+    font-family: 'bikoregular';
+    font-size: 14px;
+    float: left;
+}
+.input_rounded{
+    width: 60%;
+    height: 25px;
+    background: transparent;
+    color: #585757;
+    padding: 5px;
+    font-size: 13px;
+    line-height: 100%;
+    border: 1px solid #782E74;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.btn_purple{
+    width: 100px;
+    height: 35px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #D1D2D4;
+    background: #956D93;
+    color: #fff;
+}
 .section{
     -moz-background-size: cover;
     background-size: cover;
@@ -171,7 +246,9 @@ h2{
 .section-contact{
     position: relative;
     height:500px;
-    background:#fff;
+    background-image: url('../images/bg_contacto.jpg');
+    background-size: cover;
+    background-position: center center;
 }
 
 .logoOnline{
@@ -258,6 +335,9 @@ h2{
     border: 1px solid #C1C1C1;
     border-radius: 10px;
     -webkit-appearance: none;
+    background-image:url('../images/flechaDown.png');
+    background-repeat: no-repeat;
+    background-position: 95%;
 }
 
 .promoImg{
@@ -268,6 +348,7 @@ h2{
 }
 
 .adresses{
+    position: relative;
     background:rgba(177,179,181,0.1);
     width:80%;
     height:300px;
@@ -275,8 +356,21 @@ h2{
     margin-top:60px;
     padding:20px;
 }
-
+.arrow_adresses{
+    width: 0;
+    height: 0;
+    position:absolute;
+    top:15%;
+    right:-50px;
+    border-style: solid;
+    border-width: 50px 0 50px 100px;
+    border-color: transparent transparent transparent #f6f7f7;
+    line-height: 0px;
+    _border-color: #000000 #000000 #000000 #f6f7f7;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
 .contactText{
+    margin-top: 9%;
     text-align: right;
 }
 
