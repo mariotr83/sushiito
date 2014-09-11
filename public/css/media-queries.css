@@ -56,11 +56,11 @@
         font-size: 14px;
     }
     .section-slider {
-        position: relative;
-        background-image: url("../images/slider01.jpg");
+       position: relative;
+       /* background-image: url("../images/slider01.jpg");*/
         height: 500px;
-        background-size: 99% auto;
-       background-position: center center;
+       /* background-size: 99% auto;
+       background-position: center center;*/
     }
     .logoOnline{
         padding-left: 15%;

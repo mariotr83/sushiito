@@ -27,6 +27,16 @@
 
 
     <div class="section section-slider">
+
+        <div id="slider_home">
+            <ul class="bjqs">
+                <li><div class="home_slide slide_h1"></div><!-- Any content you like --></li>
+                <li><div class="home_slide slide_h2"></div><!-- Any content you like --></li>
+
+                <!--<li><img src="{{ URL::to('/images/slider01.jpg') }}"></li>-->
+            </ul>
+        </div>
+
     </div>
 
     <div id="onlinestore" class="section section-onlinestore" data-stellar-background-ratio="0.5">
@@ -39,11 +49,14 @@
     </div>
 
 <div id="menuPDF" class="section section-menuPDF" data-stellar-background-ratio="0.5">
-    <div class="menuImg">
+<div class="menuImg">
+    <iframe style='width:900px;height:500px' src='http://online.fliphtml5.com/gkjb/jnel/'  seamless='seamless' scrolling='no' frameborder='0' allowtransparency='true' allowfullscreen='true' ></iframe>    <div class="hide_magazine"></div>
+</div>
+   <!-- <div class="menuImg">
         <img src="images/menu.jpg">
-    </div>
+    </div>-->
     <div class="downloadPdf">
-        <p>Descarga el menú en PDF aquí.</p>
+        <a href="{{URL::to('/documents/menu-sushiitto.pdf')}}" target="_blank"><p>Descarga el menú en PDF aquí.</p></a>
     </div>
     <div class="redLabel"></div>
 </div>
@@ -194,8 +207,47 @@
              'showmarkers' : false,
              'nexttext' : "<img src={{URL::to('/images/right_arrow.png')}}>", // Text for 'next' button (can use HTML)
              'prevtext' : "<img src={{URL::to('/images/left_arrow.png')}}>", // Text for 'previous' button (can use HTML)
+             'responsive' : false
+         });
+
+        $('.home_slide').css({ width: $(window).width(), height: $(window).height() });
+
+       $('#slider_home').bjqs({
+             'height' : $(window).height(),
+             'width' : $(window).width(),
+             'showmarkers' : false,
+             'nexttext' : "<img src={{URL::to('/images/right_arrow.png')}}>", // Text for 'next' button (can use HTML)
+             'prevtext' : "<img src={{URL::to('/images/left_arrow.png')}}>", // Text for 'previous' button (can use HTML)
              'responsive' : true
          });
+
+         $(window).resize(function(){
+             $('.home_slide').css({ width: $(window).width(), height: $(window).height() });
+
+             $('.home_slide').css('max-width',$(window).width());
+             $('.home_slide').css('max-height',$(window).height());
+         });
+
+
+
+
+
+        /* $(window).resize(function(){
+             if($(window).width()>$('#slider_home').width()){
+
+
+                 $('#slider_home').bjqs({
+                     'height' : $(window).height(),
+                     'width' : $(window).width(),
+                     'showmarkers' : false,
+                     'nexttext' : "<img src={{URL::to('/images/right_arrow.png')}}>", // Text for 'next' button (can use HTML)
+                     'prevtext' : "<img src={{URL::to('/images/left_arrow.png')}}>", // Text for 'previous' button (can use HTML)
+                     'responsive' : true
+                 });
+             }
+            });*/
+
+
      });
  </script>
 @stop

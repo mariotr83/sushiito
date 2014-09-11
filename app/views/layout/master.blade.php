@@ -18,6 +18,7 @@
         {{ HTML::style('css/bjqs.css') }}
 
         {{ HTML::script('javascript/plugins/slider-master/bjqs-1.3.js', array('media' => 'screen')) }}
+        {{ HTML::script('javascript/plugins/turn/turn.min.js', array('media' => 'screen')) }}
 
     </head>
     <body>
