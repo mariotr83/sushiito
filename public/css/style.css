@@ -86,7 +86,7 @@ h2{
     width: 53%;
     text-align:center;
     margin-top:30px;
-
+    font-family: "Myriad Pro", Verdana, Arial, Tahoma;
     margin-right: 5%;
 }
 .section-menu .menu-items ul{
@@ -141,6 +141,7 @@ h2{
     line-height: 37px;
     margin-top: 30px;
     color:#782E74;
+    font-family: "Myriad Pro", Verdana, Arial, Tahoma;
 }
 .fb_sushito a{
     text-decoration: none;
