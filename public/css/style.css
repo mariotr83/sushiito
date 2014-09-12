@@ -494,6 +494,10 @@ h2{
 }
 
 /*--------LAST MODIFICATIONS RESPONSIVE---*/
+
+.section-onlinestore,.section-menuPDF,.section-promotions,.section-location,.section-contact{
+   min-height: 780px !important;
+}
 .section-menuPDF{
     padding-top: 150px;
 }
