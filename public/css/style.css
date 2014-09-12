@@ -285,12 +285,15 @@ h2{
 
 .menuImg{
     position: relative;
-    width:620px;
+   /* width:620px;*/
+    width: 800px;
     height:auto;
     margin:0 auto;
     padding-top:100px;
 }
-
+.magazine_pdf{
+    width:800px;height:500px;
+}
 .downloadPdf{
     width:620px;
     height:auto;

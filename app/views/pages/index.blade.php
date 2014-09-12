@@ -50,7 +50,7 @@
 
 <div id="menuPDF" class="section section-menuPDF" data-stellar-background-ratio="0.5">
 <div class="menuImg">
-    <iframe style='width:900px;height:500px' src='http://online.fliphtml5.com/gkjb/jnel/'  seamless='seamless' scrolling='no' frameborder='0' allowtransparency='true' allowfullscreen='true' ></iframe>    <div class="hide_magazine"></div>
+    <iframe  class="magazine_pdf" src='http://online.fliphtml5.com/gkjb/jnel/'  seamless='seamless' scrolling='no' frameborder='0' allowtransparency='true' allowfullscreen='true' ></iframe>    <div class="hide_magazine"></div>
 </div>
    <!-- <div class="menuImg">
         <img src="images/menu.jpg">

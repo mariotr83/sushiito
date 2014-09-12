@@ -134,6 +134,26 @@
     }
 }
 
+
+
+
+@media all and (min-width: 900px){
+    .menuImg{
+        position: relative;
+        /* width:620px;*/
+        width: 900px;
+        height:auto;
+        margin:0 auto;
+        padding-top:100px;
+    }
+    .magazine_pdf{
+        width:900px;height:500px;
+    }
+}
+
+
+
+
 @media all and (min-width: 1600px){
     .left_contact{
         width:40%;
