@@ -1,3 +1,7 @@
+
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+html .clearfix { zoom: 1; } /* IE6 */
+html:first-child+html .clearfix { zoom: 1; } /* IE7 */
 @font-face {
     font-family: 'bikoregular';
     src: url('../fonts/biko_regular-webfont.eot');
@@ -517,4 +521,17 @@ h2{
 .inside_page img{
     max-width: 100%;
 }
+.logoOnline {
+    width: 50%;
+    bottom: 10px;
+    height: auto;
+}
 
+
+.iframe{
+    width: 50%;
+    min-width: 600px;
+    margin-left: 10%;
+    border: none;
+    bottom: 10px;
+}

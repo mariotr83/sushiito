@@ -36,7 +36,7 @@ class HomeController extends BaseController
 
 
        Mail::send('emails.contacto', ['name' => Input::get('name'),'phone' => Input::get('phone'),'email' => Input::get('email'),'sucursal' => Input::get('sucursal'),'mensaje' => Input::get('mensaje')], function ($message) {
-            $message->to('alvaro@maniak.com.mx', Input::get('firstname'))->subject('Contacto Sushiitto');
+            $message->to('contacto@sushiitto.com.mx', Input::get('firstname'))->subject('Contacto Sushiitto');
         });
 
         return Redirect::back()->withInput();
