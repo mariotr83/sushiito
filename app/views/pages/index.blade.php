@@ -6,7 +6,7 @@
         <div class="menu-logo">
             <img src="images/logo_sushiitto.png">
         </div>
-           <div class="fb_sushito"><a href="https://www.facebook.com/sushiittonorte" target="_blank"><img src="{{ URL::to('/images/fbIcon.png') }}">/Sushittonorte</a></div>
+           <div class="fb_sushito"><a href="https://www.facebook.com/sushiittonorte" target="_blank"><img src="{{ URL::to('/images/fbIcon.png') }}">/Sushiittonorte</a></div>
         <div class="menu-items">
             <ul>
                 <li class="selected item" data="menu">Home</li>
@@ -44,11 +44,15 @@
                     <div class="logoOnline">
                         <img src="images/logoOnline.jpg">
                     </div>
-        <iframe class="iframe" src="http://www.pedidosya.com.mx/results?chain=Sushi_Itto_MX&utm_source=sushi-itto.com.mx&utm_medium=b2b&utm_content=iframe&utm_campaign=Widget&w=06741c0d7d00c685e71665259be6d14e"></iframe>
 
 
 
-        <div class="orderModule"></div>
+        <div class="orderModule">
+            <iframe class="iframe"   AllowTransparency src="http://www.pedidosya.com.mx/results?chain=Sushi_Itto_MX&utm_source=sushi-itto.com.mx&utm_medium=b2b&utm_content=iframe&utm_campaign=Widget&w=06741c0d7d00c685e71665259be6d14e">
+                background-color:#F999"
+            </iframe>
+
+        </div>
                 <div class="redLabel"> </div>
     </div>
 
@@ -205,13 +209,16 @@
 @section('js_code')
  <script>
      $(document).ready(function(){
+
+
+
          $('#slider_promotions').bjqs({
              'height' : 516,
              'width' : 1083,
              'showmarkers' : false,
              'nexttext' : "<img src={{URL::to('/images/right_arrow.png')}}>", // Text for 'next' button (can use HTML)
              'prevtext' : "<img src={{URL::to('/images/left_arrow.png')}}>", // Text for 'previous' button (can use HTML)
-             'responsive' : false
+             'responsive' : true
          });
 
         $('.home_slide').css({ width: $(window).width(), height: $(window).height() });
