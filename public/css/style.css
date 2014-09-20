@@ -501,8 +501,9 @@ h2{
 #slider_menu{
     width:100%;
     height:auto;
+    margin: auto;
 }
-.menu_h1{
+/*.menu_h1{
     background-image: url("../images/menu/menu-sushiitto_1.jpg");
     background-size: 100% auto;
     background-position: center center;
@@ -513,7 +514,8 @@ h2{
     background-size: 100% auto;
     background-position: center center;
     background-repeat: no-repeat;
-}
+}*/
+
 /*--------LAST MODIFICATIONS RESPONSIVE---*/
 
 .section-onlinestore,.section-menuPDF,.section-promotions,.section-location,.section-contact{
@@ -557,4 +559,8 @@ h2{
 }
 .iframe body{
     background-color: rgba(255,255,255,0) !important;
+}
+
+.section-menuPDF{
+    height: auto !important;
 }

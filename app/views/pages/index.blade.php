@@ -61,10 +61,8 @@
     <!--<iframe  class="magazine_pdf" src='http://online.fliphtml5.com/gkjb/jnel/'  seamless='seamless' scrolling='no' frameborder='0' allowtransparency='true' allowfullscreen='true' ></iframe>    <div class="hide_magazine"></div>-->
     <div id="slider_menu">
         <ul class="bjqs">
-            <li><div class="home_slide menu_h1"></div><!-- Any content you like --></li>
-            <li><div class="home_slide menu_h2"></div><!-- Any content you like --></li>
-
-            <!--<li><img src="{{ URL::to('/images/slider01.jpg') }}"></li>-->
+            <li><img src="{{ URL::to('/images/menu/menu-sushiitto_1.jpg') }}"><!-- Any content you like --></li>
+            <li><img src="{{ URL::to('/images/menu/menu-sushiitto_2.jpg') }}"><!-- Can go inside these slides--></li>
         </ul>
     </div>
 <!--</div>-->
@@ -240,12 +238,20 @@
              'responsive' : true
          });
 
-         $('#slider_menu').bjqs({
-             'height' : $(window).height() *.80,
+        /* $('#slider_menu').bjqs({
+             'height' : $(window).height(),
              'width' : $(window).width(),
              'showmarkers' : false,
              'nexttext' : "<img style='margin-right: 10px;' src={{URL::to('/images/right_arrow.png')}}>", // Text for 'next' button (can use HTML)
              'prevtext' : "<img style='margin-left: 10px;' src={{URL::to('/images/left_arrow.png')}}>", // Text for 'previous' button (can use HTML)
+             'responsive' : true
+         });*/
+         $('#slider_menu').bjqs({
+             'height' : ($('.resize').width()*53.75)/100,
+             'width' : $('.resize').width(),
+             'showmarkers' : false,
+             'nexttext' : "<img style='margin-right: -10px;' src={{URL::to('/images/right_arrow.png')}}>", // Text for 'next' button (can use HTML)
+             'prevtext' : "<img style='margin-left: -10px;' src={{URL::to('/images/left_arrow.png')}}>", // Text for 'previous' button (can use HTML)
              'responsive' : true
          });
 
