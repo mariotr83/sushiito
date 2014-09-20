@@ -14,7 +14,7 @@
         <script type="text/javascript" src="<?=URL::to('javascript/plugins/jquery/jquery.min.js')?>"></script>
         <script type="text/javascript" src="<?=URL::to('javascript/plugins/stellar/stellar.js')?>"></script>
         <script type="text/javascript" src="<?=URL::to('javascript/functions.js')?>"></script>
-
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         {{ HTML::style('css/bjqs.css') }}
 
         {{ HTML::script('javascript/plugins/slider-master/bjqs-1.3.js', array('media' => 'screen')) }}
