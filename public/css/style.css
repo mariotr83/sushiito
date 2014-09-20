@@ -498,6 +498,22 @@ h2{
     background-repeat: no-repeat;
 }
 
+#slider_menu{
+    width:100%;
+    height:auto;
+}
+.menu_h1{
+    background-image: url("../images/menu/menu-sushiitto_1.jpg");
+    background-size: 100% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.menu_h2{
+    background-image: url("../images/menu/menu-sushiitto_2.jpg");
+    background-size: 100% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 /*--------LAST MODIFICATIONS RESPONSIVE---*/
 
 .section-onlinestore,.section-menuPDF,.section-promotions,.section-location,.section-contact{
