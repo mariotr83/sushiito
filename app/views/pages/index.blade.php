@@ -42,7 +42,8 @@
     <div id="onlinestore" class="section section-onlinestore" data-stellar-background-ratio="0.5">
                 <div class="whiteSpace"></div>
                     <div class="logoOnline">
-                        <img src="images/logoOnline.jpg">
+                       <!-- <img src="images/logoOnline.jpg">-->
+                        <img style="margin-bottom: 130px" src="images/logoOnline2.png">
                     </div>
 
 

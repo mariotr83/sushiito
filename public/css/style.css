@@ -243,8 +243,15 @@ h2{
 }
 .section-onlinestore{
     position:relative;
-    height:500px;
+    /*height: 500px;*/
+    min-height:500px;
     background: #fff;
+    background-image: url('../images/img_pedido.jpg');
+    background-size:cover;
+    background-position: top center;
+
+   height: auto !important;
+
 }
 .section-location{
     position:relative;
