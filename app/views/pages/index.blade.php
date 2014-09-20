@@ -213,11 +213,11 @@
 
 
          $('#slider_promotions').bjqs({
-             'height' : 516,
-             'width' : 1083,
+             'height' : ($('.resize').width()*47.6454)/100,
+             'width' : $('.resize').width(),
              'showmarkers' : false,
-             'nexttext' : "<img src={{URL::to('/images/right_arrow.png')}}>", // Text for 'next' button (can use HTML)
-             'prevtext' : "<img src={{URL::to('/images/left_arrow.png')}}>", // Text for 'previous' button (can use HTML)
+             'nexttext' : "<img style='margin-right: 10px;' src={{URL::to('/images/right_arrow.png')}}>", // Text for 'next' button (can use HTML)
+             'prevtext' : "<img style='margin-left: 10px;' src={{URL::to('/images/left_arrow.png')}}>", // Text for 'previous' button (can use HTML)
              'responsive' : true
          });
 
