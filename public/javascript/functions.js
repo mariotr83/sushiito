@@ -1,6 +1,78 @@
 var wheight;
 
+function sendContact(){
+
+    $.ajax({
+        type: 'POST',
+        url: '/contact',
+        data: $('#contactForm').serialize(),
+        success: function(response){
+            $('#contactFeedBack').html(response);
+        },
+        error: function(data){
+            // Error...
+            var errors = $.parseJSON(data.responseText);
+
+            $.each(errors, function(index, value) {
+                $.each(value, function(index2, value2) {
+                    console.log(index2 + ' ' + value2);
+                    if (index2 == 'name') {
+                        $('#nameFieldError').html(value2);
+                    }
+                    else if (index2 == 'phone') {
+                        $('#phoneFieldError').html(value2);
+                    }
+                    else if (index2 == 'email') {
+                        $('#emailFieldError').html(value2);
+                    }
+                    else if (index2 == 'sucursal') {
+                        $('#sucursalFieldError').html(value2);
+                    }
+                    else if (index2 == 'mensaje') {
+                        $('#mensajeFieldError').html(value2);
+                    }
+
+                });
+
+            });
+        }
+
+    });
+
+}
+
+function sendSubscribe(){
+    $.ajax({
+        type: 'POST',
+        url:'/subscribe',
+        data: $('#subscribeForm').serialize(),
+
+        success: function(response){
+            $('#subscribeFeedBack').html(response);
+        },
+
+        error: function(data){
+            // Error...
+            var errors = $.parseJSON(data.responseText);
+
+            $.each(errors, function(index, value) {
+                $.each(value, function(index2, value2) {
+                    console.log(index2 + ' ' + value2);
+                    if (index2 == 'subscribe') {
+                        $('#subscribeFieldError').html(value2).fadeOut(3500);
+                    }
+
+                });
+
+            });
+        }
+
+    })
+}
+
 $(document).ready(function(){
+
+
 
     //Height responsiveness
     $(window).resize(function() {
@@ -64,7 +136,7 @@ $(document).ready(function(){
         "marker": new google.maps.Marker({
             position: new google.maps.LatLng(25.611273, -100.270701),
             animation: google.maps.Animation.DROP,
-            title: "Maniak Experiencial"
+            title: "Sucursal Micropolis"
         }),
         "dates" : [
             {"open":-1,"close":-1},
@@ -78,7 +150,7 @@ $(document).ready(function(){
     }
     var mapOptions = {
         zoom: 16,
-        scrollwheel: true,
+        scrollwheel: false,
         center: new google.maps.LatLng(20, -103),
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
@@ -122,6 +194,7 @@ $(document).ready(function(){
 
 });
 
+/*
 $(function(){
     $.stellar({
         horizontalScrolling: false,
@@ -129,6 +202,7 @@ $(function(){
         responsive: true
     });
 });
+*/
 
 $(window).load(function() {
     $('#slider').nivoSlider({

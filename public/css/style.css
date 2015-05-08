@@ -156,10 +156,12 @@ h2{
     font-size: 14px;
     color: red;
     font-family: 'bikoregular';
+    text-align: left !important;
+    position:relative;
 }
 /* ---- Slider ----- */
 #slider_promotions{
-    width: 90%;
+    max-width: 1550px !important;
     height:700px ;
    /* background-color: red;*/
     margin: auto;
@@ -216,6 +218,7 @@ h2{
     border: 1px solid #D1D2D4;
     background: #956D93;
     color: #fff;
+    cursor:pointer;
 }
 .section{
     -moz-background-size: cover;
@@ -236,6 +239,11 @@ h2{
     padding-top: 150px;
 }
 
+#subscribeFieldError{
+    color:red;
+    font-size: 12px;
+}
+
 .section-menuPDF{
     position:relative;
     height:500px;
@@ -253,14 +261,16 @@ h2{
    height: auto !important;
 
 }
+
+
 .section-location{
     position:relative;
     height:500px;
 }
 .section-location .map{
-    position:absolute;
-    width:40%;
-    height:50%;
+    position:relative;
+    width:100%;
+    height:100%;
 
 
 }
@@ -327,13 +337,13 @@ h2{
 
 .rightColumn{
     width:50%;
-    height:auto;
+    height:484px;
     float:left;
     padding: 150px 0px 0 0;
 }
 
 .mapHead{
-    width:95%;
+    width:100%;
     height:60px;
     background:#782E74;
 }
@@ -405,8 +415,20 @@ h2{
     margin-bottom:10px;
     border-radius: 10px;
     border:1px solid #D1D2D4;
+    padding-left:8px;
 
 }
+
+.contactText select{
+    width:102%;
+    height: 43px;
+    margin-bottom:10px;
+    border-radius: 10px;
+    border:1px solid #D1D2D4;
+    padding-left:8px;
+
+}
+
 
 .contactText input[type="button"]{
     width:100px;
@@ -419,6 +441,9 @@ h2{
 }
 
 
+
+
+
 .leftColumnForm{
     width:40%;
     height:auto;
@@ -428,7 +453,10 @@ h2{
 
 .leftColumnForm p{
     text-align:right !important;
-    margin-bottom:55px;
+    vertical-align: middle;
+    padding:10px;
+    margin-bottom: 28px;
+
 }
 
 .rightColumnForm{
@@ -436,6 +464,27 @@ h2{
     height:auto;
     float:left;
     padding:0px 0px 0 0;
+}
+
+.rightColumnForm p{
+    height:40px;
+    margin-bottom: 28px;
+}
+
+
+.rightColumnForm span{
+    height:40px;
+    text-align: left;
+    position: absolute;
+    width: 470px;
+    right: 30px;
+    margin-top: -23px;
+    font-size: 12px;
+}
+
+#contactFeedBack{
+    color:#fff;
+    font-size: 14px;
 }
 
 .branch_pickSucursal{
@@ -525,9 +574,7 @@ h2{
 
 /*--------LAST MODIFICATIONS RESPONSIVE---*/
 
-.section-onlinestore,.section-menuPDF,.section-promotions,.section-location,.section-contact{
-   min-height: 780px !important;
-}
+
 .section-menuPDF{
     padding-top: 150px;
 }
@@ -546,16 +593,15 @@ h2{
 .inside_page img{
     max-width: 100%;
 }
-.logoOnline {
-    width: 50%;
-    bottom: 10px;
-    height: auto;
+
+
+.logoOnline img{
+    margin-bottom:300px;
 }
 
 
 .iframe{
     width: 50%;
-    min-width: 800px;
     /*margin-left: 10%;*/
     margin: auto;
     display:block;
@@ -566,6 +612,10 @@ h2{
 }
 .iframe body{
     background-color: rgba(255,255,255,0) !important;
+}
+
+.iframe .banner-ad-sa{
+    display: none !important;
 }
 
 .section-menuPDF{

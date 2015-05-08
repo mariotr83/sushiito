@@ -29,10 +29,6 @@
     }
 
 
-
-
-
-
     h1 {
         font-weight: normal;
         letter-spacing: -1px;

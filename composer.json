@@ -5,7 +5,9 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.2.*",
-        "laracasts/validation": "1.*"
+        "laracasts/validation": "1.*",
+        "intervention/image": "dev-master",
+        "fbf/laravel-contact-form": "dev-master"
 	},
 	"autoload": {
 		"classmap": [
@@ -18,7 +20,10 @@
 		],
      "psr-4":{
          "Sushiitto\\": "app/Sushiitto"
-     }
+     },
+        "psr-0": {
+            "Guzzle\\": "src/"
+        }
 	},
 	"scripts": {
 		"post-install-cmd": [

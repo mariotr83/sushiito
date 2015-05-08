@@ -1,3 +1,4 @@
+
 <?php
 
 return array(
@@ -33,7 +34,7 @@ return array(
 	"different"            => "The :attribute and :other must be different.",
 	"digits"               => "The :attribute must be :digits digits.",
 	"digits_between"       => "The :attribute must be between :min and :max digits.",
-	"email"                => "The :attribute must be a valid email address.",
+	"email"                => "El :attribute debe de ser un mail válido.",
 	"exists"               => "The selected :attribute is invalid.",
 	"image"                => "The :attribute must be an image.",
 	"in"                   => "The selected :attribute is invalid.",
@@ -83,9 +84,31 @@ return array(
 	*/
 
 	'custom' => array(
+
 		'attribute-name' => array(
 			'rule-name' => 'custom-message',
 		),
+        'name' => [
+            'required' => 'Favor de proporcionar su nombre!',
+        ],
+        'phone' => [
+            'required' => 'Favor de proporcionar su número de teléfono!',
+        ],
+        'email' => [
+            'required' => 'Favor de proporcionar un Email válido!',
+        ],
+        'sucursal' => [
+            'required' => 'Favor de indicar la sucursal a la que desea enviar su mensaje!',
+        ],
+        'mensaje' => [
+            'required' => 'Favor de incluir un mensaje!',
+        ],
+        'mail' => [
+            'required' => 'Proporciona un mail válido!',
+        ],
+        'subscribe' => [
+            'required' => 'Proporciona un mail válido!',
+        ],
 	),
 
 	/*

@@ -2,10 +2,9 @@
 
 <html>
     <head>
-
         <!-- Meta tags -->
         <meta charset="utf-8">
-
+        <meta name="viewport" content="width=device-width, user-scalable=no">
         <!-- Style sheets CSS -->
         <link rel="stylesheet" href="<?=URL::to('css/nivo-slider.css')?>" type="text/css" media="screen" />
         <link rel="stylesheet" type="text/css" href="<?=URL::to('css/style.css')?>">

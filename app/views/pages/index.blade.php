@@ -30,9 +30,9 @@
 
         <div id="slider_home">
             <ul class="bjqs">
-                <li><div class="home_slide slide_h1"></div><!-- Any content you like --></li>
-                <li><div class="home_slide slide_h2"></div><!-- Any content you like --></li>
-
+                @foreach($slider_pages as $slider)
+                <li><div class="home_slide slide_h2" style="background-image: url('{{asset('img/sliderImages/'.$slider->image)}}');"></div><!-- Any content you like --></li>
+                @endforeach
                 <!--<li><img src="{{ URL::to('/images/slider01.jpg') }}"></li>-->
             </ul>
         </div>
@@ -43,16 +43,16 @@
                 <div class="whiteSpace"></div>
                     <div class="logoOnline">
                        <!-- <img src="images/logoOnline.jpg">-->
-                        <img style="margin-bottom: 130px" src="images/logoOnline2.png">
+                        <img src="images/logoOnline2.png">
                     </div>
 
 
 
         <div class="orderModule">
-            <iframe class="iframe"   AllowTransparency src="http://www.pedidosya.com.mx/results?chain=Sushi_Itto_MX&utm_source=sushi-itto.com.mx&utm_medium=b2b&utm_content=iframe&utm_campaign=Widget&w=06741c0d7d00c685e71665259be6d14e">
-                background-color:#F999"
+        @foreach($link_pages as $link)
+            <iframe class="iframe" AllowTransparency src="{{$link->url}}">
             </iframe>
-
+        @endforeach
         </div>
                 <div class="redLabel"> </div>
     </div>
@@ -62,8 +62,10 @@
     <!--<iframe  class="magazine_pdf" src='http://online.fliphtml5.com/gkjb/jnel/'  seamless='seamless' scrolling='no' frameborder='0' allowtransparency='true' allowfullscreen='true' ></iframe>    <div class="hide_magazine"></div>-->
     <div id="slider_menu">
         <ul class="bjqs">
-            <li><img src="{{ URL::to('/images/menu/menu-sushiitto_1.jpg') }}"><!-- Any content you like --></li>
-            <li><img src="{{ URL::to('/images/menu/menu-sushiitto_2.jpg') }}"><!-- Can go inside these slides--></li>
+        @foreach($menu_sliders as $menu)
+            <li><img src="{{ URL::to('/img/sliderImages/'.$menu->image)}}"><!-- Any content you like --></li>
+
+            @endforeach
         </ul>
     </div>
 <!--</div>-->
@@ -71,7 +73,9 @@
         <img src="images/menu.jpg">
     </div>-->
     <div class="downloadPdf">
-        <a href="{{URL::to('/documents/menu-sushiitto.pdf')}}" target="_blank"><p>Descarga el menú en PDF aquí.</p></a>
+        @foreach($menu_pdf as $pdf)
+        <a href="{{URL::to('/img/menu/'.$pdf->file)}}" target="_blank"><p>Descarga el menú en PDF aquí.</p></a>
+        @endforeach
     </div>
     <div class="redLabel"></div>
 </div>
@@ -95,10 +99,20 @@
     <div class="suscribe_wrap">
         <div class="left_suscribe">
                 <div class="title_suscribe">Recibe Ofertas y Promociones</div>
+
                 <div class="info_suscribe">Ingresa aqui tu correo para enviarte nuestras promociones y descuentos</div>
+
         </div>
         <div class="right_suscribe">
-            <input type="text" class="input_rounded" placeholder="Escribe tu correo"> <input type="submit" value="Suscribir" class="btn_purple">
+         {{ Form:: open(array('action' => 'ContactController@getContactUsForm', 'id' => 'subscribeForm'))}}
+
+            <input type="text" class="input_rounded" placeholder="Escribe tu correo" name="subscribe"> {{--<input type="submit" value="Suscribir" class="btn_purple">--}}
+
+             {{ Form::button('Suscribir', array('class' => 'btn_purple', 'onclick' => 'sendSubscribe();')) }}
+             <div id="subscribeFieldError"></div>
+             <div id="subscribeFeedBack"></div>
+                                    {{--<input class="btn_purple" type="submit" value="ENVIAR">--}}
+                        {{Form::close()}}
         </div>
     </div>
 
@@ -173,29 +187,47 @@
         <div class="rightColumn contactText">
             <h1 class="contactText">CONTACTO</h1>
             <h2>Tu comentarios son importantes para nosotros</h2>
-            {{ Form::open(['route' => 'contact']) }}
+            {{--@include('laravel-contact-form::form')--}}
+
+          {{ Form:: open(array('action' => 'ContactController@getContactUsForm', 'id' => 'contactForm'))}}
+
                 <div class="leftColumnForm">
                     <p>Nombre:</p>
-                    <p>Telefono:</p>
+                    <p>Teléfono:</p>
                     <p>Email:</p>
                     <p>Sucursal:</p>
                     <p>Mensaje:</p>
                 </div>
                 <div class="rightColumnForm">
-                <p><input type="text" name="name">{{$errors->first('name',"<span class=error>:message</span>")}}</p>
 
 
-                <p> <input type="text" name="phone"> {{$errors->first('phone',"<span class=error>:message</span>")}}</p>
+                <p><input type="text" name="name"></p>
+                <span id="nameFieldError" class=error></span>
 
-                    <p> <input type="text" name="email"> {{$errors->first('email',"<span class=error>:message</span>")}}</p>
 
-                    <p> <input type="text" name="sucursal">  {{$errors->first('sucursal',"<span class=error>:message</span>")}}</p>
+                <p> <input type="text" name="phone"></p>
+                 <span id="phoneFieldError" class=error></span>
 
-                    <p> <input type="text" name="mensaje">{{$errors->first('mensaje',"<span class=error>:message</span>")}}</p>
+
+                <p> <input type="text" name="email"></p>
+                <span id="emailFieldError" class=error></span>
+
+                    <p> {{--<input type="text" name="sucursal">--}}
+                    <select name="sucursal">
+                    <option value="valle">Del Valle</option>
+                    <option value="valle">Micropolis</option>
+                    </select>
+                    </p>
+                    <span id="sucursalFieldError" class=error></span>
+
+                    <p> <input type="text" name="mensaje"></p>
+                    <span id="mensajeFieldError" class=error></span>
 
 
                 </div>
-                        <input class="btn_purple" type="submit" value="ENVIAR">
+                {{ Form::button('Submit', array('class' => 'btn_purple', 'onclick' => 'sendContact();')) }}
+                <div id="contactFeedBack"></div>
+                        {{--<input class="btn_purple" type="submit" value="ENVIAR">--}}
             {{Form::close()}}
             </div>
     </div>

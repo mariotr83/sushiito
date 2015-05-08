@@ -28,7 +28,7 @@ return array(
     |
     */
 
-    'host' => 'mail.maniak.com.mx',
+    'host' => 'smtp.sushiitto.com.mx',
 
     /*
     |--------------------------------------------------------------------------
@@ -41,7 +41,7 @@ return array(
     |
     */
 
-    'port' => 26,
+    'port' => 87,
 
     /*
     |--------------------------------------------------------------------------
@@ -54,7 +54,7 @@ return array(
     |
     */
 
-    'from' => array('address' => 'test@maniak.com.mx', 'name' => 'Janssen'),
+    'from' => array('address' => 'web@sushiitto.com.mx', 'name' => 'Sushiito Contacto'),
 
     /*
     |--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return array(
     |
     */
 
-    'username' => 'test@maniak.com.mx',
+    'username' => '',
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return array(
     |
     */
 
-    'password' => 'Maniak2014',
+    'password' => '',
 
     /*
     |--------------------------------------------------------------------------
@@ -119,6 +119,6 @@ return array(
     |
     */
 
-    'pretend' => false,
+    'pretend' => true,
 
 );
