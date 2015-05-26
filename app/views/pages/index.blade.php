@@ -6,8 +6,14 @@
         <div class="menu-logo">
             <img src="images/logo_sushiitto.png">
         </div>
+        <div class="orderMenu">
+            <a href="https://sushi-itto.hellofood.com.mx/" target="_blank"> <img src="images/orderLogo.png"></a>
+            </div>
+
            <div class="fb_sushito"><a href="https://www.facebook.com/sushiittonorte" target="_blank"><img src="{{ URL::to('/images/fbIcon.png') }}">/Sushiittonorte</a></div>
-        <div class="menu-items">
+
+
+           <div class="menu-items">
             <ul>
                 <li class="selected item" data="menu">Home</li>
                 <li class="item" data="onlinestore">Pedido en Linea</li>
@@ -49,10 +55,17 @@
 
 
         <div class="orderModule">
-        @foreach($link_pages as $link)
+            <div class="orderImage">
+                 <a href="https://sushi-itto.hellofood.com.mx/" target="_blank">
+                     <img src="images/banner_order.png">
+                     </a>
+            </div>
+
+
+       <!-- @foreach($link_pages as $link)
             <iframe class="iframe" AllowTransparency src="{{$link->url}}">
             </iframe>
-        @endforeach
+        @endforeach-->
         </div>
                 <div class="redLabel"> </div>
     </div>
