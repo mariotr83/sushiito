@@ -1,0 +1,95 @@
+To: mario@maniak.com.mx
+Subject: Contacto Sushiitto
+Message-ID: <0f39e4cf26e9dcf343a3a45aa4c9d63f@localhost>
+Date: Mon, 04 May 2015 22:22:49 +0000
+From: Janssen <test@maniak.com.mx>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+
+    <title>Correo</title>
+
+<style>
+    .rwd-table {
+        margin: auto;
+        min-width: 300px;
+    }
+
+    th, td {
+        text-align: left;
+
+    }
+    th{
+        text-align: center;
+    }
+
+
+
+
+
+
+    h1 {
+        font-weight: normal;
+        letter-spacing: -1px;
+        color: black;
+    }
+
+    .rwd-table {
+        background: #34495E;
+        color: #fff;
+        border-radius: .4em;
+        overflow: hidden;
+    }
+    tr {
+        min-height: 60px;
+        font-size: 14px;
+        border-color: lighten (#34495E, 10%);
+    }
+    td{
+        min-height: 60px;
+        border-right: 1px solid white;
+    }
+
+
+</style>
+
+
+</head>
+<body>
+<div style=3D"width:100%;text-align: center;margin-bottom: 30px;"><img src=
+=3D"http://localhost:8000/images/logo_sushiitto.png"></div>
+<div style=3D"width:100%;text-align: center;"><h1>Informaci=C3=B3n</h1></di=
+v>
+<table class=3D"rwd-table">
+    <tr>
+        <th>Nombre</th>
+        <th>Telefono</th>
+        <th>Email</th>
+        <th>Sucursal</th>
+        <th>Mensaje</th>
+    </tr>
+    <tr>
+        <td data-th=3D"Movie Title"> Mario </td>
+        <td data-th=3D"Genre"> 3316023388 </td>
+        <td data-th=3D"Year"> mario@maniak.com.mx </td>
+        <td data-th=3D"Gross"> sucursal </td>
+        <td data-th=3D"Gross"> mensajes </td>
+    </tr>
+
+</table>
+
+</body>
+</html>
+
+
+
+
+
+
